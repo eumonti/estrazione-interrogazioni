@@ -1,6 +1,11 @@
-let input = document.getElementById("input");
+let input;
 let output = document.getElementById("output");
-var names = input.value.split("\n");
+let names;
+
+function getData() {
+  input = document.getElementById("input");
+  names = input.value.split("\n");
+}
 
 function pickRandom() {
   if (!names.length) {
